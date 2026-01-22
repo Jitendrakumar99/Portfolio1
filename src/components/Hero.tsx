@@ -164,30 +164,11 @@ const Hero = () => {
                 <div className="aspect-square rounded-2xl bg-gradient-to-br from-secondary to-muted overflow-hidden">
                   <div className="w-full h-full flex items-center justify-center">
                     {/* Abstract geometric pattern */}
-                    <svg viewBox="0 0 400 400" className="w-full h-full">
-                      <defs>
-                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" stopColor="hsl(174 72% 56%)" stopOpacity="0.8" />
-                          <stop offset="100%" stopColor="hsl(262 83% 65%)" stopOpacity="0.8" />
-                        </linearGradient>
-                      </defs>
-                      <circle cx="200" cy="200" r="150" fill="none" stroke="url(#grad1)" strokeWidth="2" opacity="0.3" />
-                      <circle cx="200" cy="200" r="100" fill="none" stroke="url(#grad1)" strokeWidth="2" opacity="0.5" />
-                      <circle cx="200" cy="200" r="50" fill="url(#grad1)" opacity="0.2" />
-                      <motion.circle
-                        cx="200"
-                        cy="200"
-                        r="80"
-                        fill="none"
-                        stroke="hsl(174 72% 56%)"
-                        strokeWidth="3"
-                        strokeDasharray="20 10"
-                        initial={{ rotate: 0 }}
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        style={{ originX: "200px", originY: "200px" }}
-                      />
-                    </svg>
+                    <img
+                      src="/profile-image.png"
+                      alt="Jitendra - Full-stack Developer"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </motion.div>
